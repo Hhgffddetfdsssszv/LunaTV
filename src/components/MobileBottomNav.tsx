@@ -21,7 +21,6 @@ const MobileBottomNav = ({ activePath }: MobileBottomNavProps) => {
   const currentActive = activePath ?? pathname;
 
   const [navItems, setNavItems] = useState([
-    { icon: Home, label: '首页', href: '/' },
     {
       icon: Film,
       label: '电影',
@@ -84,7 +83,7 @@ const MobileBottomNav = ({ activePath }: MobileBottomNavProps) => {
         /* 紧贴视口底部，同时在内部留出安全区高度 */
         bottom: 0,
         paddingBottom: 'env(safe-area-inset-bottom)',
-        minHeight: 'calc(3.5rem + env(safe-area-inset-bottom))',
+        minHeight: 'calc(3rem + env(safe-area-inset-bottom))',
       }}
     >
       <ul className='flex items-center overflow-x-auto scrollbar-hide'>
