@@ -113,7 +113,7 @@ function PlayPageClient() {
 
   // 是否需要优选
   const [needPrefer, setNeedPrefer] = useState(
-    searchParams.get('prefer') === 'true'
+    searchParams.get('prefer') === 'false'
   );
   const needPreferRef = useRef(needPrefer);
   useEffect(() => {
